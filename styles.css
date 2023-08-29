@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2EBE3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 20rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 20px 35px 20px;
+    background-color: white;
+    border-radius: 0 0 1.5rem 1.5rem;
+    justify-content: space-around;
+    height: 24rem;
+    width: 20rem;
+
+}
+
+.info-container>span {
+    /* Perfume Word */
+    color: #6C7289;
+    font-size: 1rem;
+    font-family: cursive;
+    letter-spacing: 4px;
+}
+
+.info-container p {
+    font-family: cursive;
+    font-size: 15px;
+    color: #6C7289;
+}
+
+.new-price {
+    color: #1c8a62;
+    font-weight: bolder;
+    font-size: 2rem;
+
+}
+
+.old-price {
+    color: gray;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    position: relative;
+    bottom: 5px;
+    text-decoration: line-through;
+}
+
+button {
+    background-color: #1c8a62;
+    background-image: url(assets/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 60px 13px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    color: white;
+    padding: 0.7rem;
+    font-size: 18px;
+
+}
+
+
+button:hover {
+    cursor: pointer;
+    background-color: #156548;
+}
+
+@media (min-width:768px) {
+    main {
+        flex-direction: row;
+        max-width: 800px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    img {
+        border-radius: 1.5rem 0 0 1.5rem;
+        width: 50%;
+        height: 35rem;
+    }
+
+    .info-container {
+        border-radius: 0 1.5rem 1.5rem 0;
+        width: 50%;
+        height: 35rem;
+    }
+
+    .info-container h1 {
+        font-size: 3rem;
+    }
+
+    .info-container p {
+        line-height: 1.7rem;
+    }
+
+}
