@@ -38,12 +38,10 @@ img {
     /* Perfume Word */
     color: #6C7289;
     font-size: 1rem;
-    font-family: cursive;
     letter-spacing: 4px;
 }
 
 .info-container p {
-    font-family: cursive;
     font-size: 15px;
     color: #6C7289;
 }
